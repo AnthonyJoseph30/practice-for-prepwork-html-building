@@ -3,5 +3,46 @@
         <head>
         </head>
         <body>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Add user</legend>
+                    
+                    <div class="firstname">
+                        <label for="firstname">First name</label>
+                        <input type="text" id="firstname" name="first_name">
+                    </div>
+
+                    <div class="lastname">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" name="last_name">
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email_address"> 
+                    </div>
+
+                    <div class="status">
+                        <label for="status">Status</label>
+                        <select name="user_status" id="status">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div class="favourite_programme">
+                        <p>Choose your favorite programming language:</p>
+                        <input type="radio" name="answer" id="html" value="HTML">
+                        <label for="html">HTML</label>
+                        <br>
+                        <input type="radio" name="answer" id="css" value="CSS">
+                        <label for="css">CSS</label>
+                        <br>
+                        <input type="radio" name="answer" id="javascript" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                </fieldset>
+            </form>
         </body>
     </html>
